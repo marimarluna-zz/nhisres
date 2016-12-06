@@ -47,11 +47,11 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-
+$db['default']['dsn'] = 'pgsql:host=localhost;port=5432;dbname=nhisres;user=postgres;password=1234'
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'cloud';
+$db['default']['username'] = 'postgresql';
+$db['default']['password'] = '1234';
+$db['default']['database'] = 'nhisres';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
