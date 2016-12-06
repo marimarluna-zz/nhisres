@@ -190,7 +190,14 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
-
+	$dbopts = parse_url(getenv('DATABASE_URL'));
+	$app->register(new Herrera\Pdo\PdoServiceProvider(),
+               array(
+                   'pdo.dsn' => 'pgsql:nhisres='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
+                   'pdo.username' => $dbopts["marimar.lunam@gmail.com"],
+                   'pdo.password' => $dbopts["Martlu100"]
+               )
+);
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
