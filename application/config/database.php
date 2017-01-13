@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 $db['default']['dsn'] = 'pgsql:host=localhost;port=5432;dbname=nhisres;user=postgres;password=1234'
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'postgresql';
-$db['default']['password'] = '1234';
-$db['default']['database'] = 'nhisres';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '907b8490';
+$db['default']['database'] = 'mysql://b6a62c0b8b63a4:907b89@us-cdbr-iron-east-04.cleardb.net/heroku_502e8b1c8284f24?reconnect=true';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
