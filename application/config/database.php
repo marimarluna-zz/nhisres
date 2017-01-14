@@ -47,7 +47,7 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-$db['default']['dsn'] = 'pgsql:host=localhost;port=5432;dbname=nhisres;user=postgres;password=1234'
+
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '907b8490';
